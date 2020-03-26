@@ -9,18 +9,11 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-from datetime import date
-
-today = date.today()
-date = today.strftime("%m.%d.%y")
 
 BOT_NAME = 'vixCentral'
 
 SPIDER_MODULES = ['vixCentral.spiders']
 NEWSPIDER_MODULE = 'vixCentral.spiders'
-
-FEED_FORMAT = "json"
-FEED_URI = f"VIX_{date}.json"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'vixCentral (+http://www.yourdomain.com)'

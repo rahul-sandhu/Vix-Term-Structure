@@ -1,11 +1,13 @@
 import scrapy
+from scrapy.crawler import CrawlerProcess
+from datetime import date
 
 
 class VixSpider(scrapy.Spider):
     name = "vix_data"
 
     start_urls = [
-        "http://vixcentral.com/historical/?days=10"
+        "http://vixcentral.com/historical/?days=15"
     ]
 
     def parse(self, response):
@@ -24,3 +26,15 @@ class VixSpider(scrapy.Spider):
                 'F8': response.css('td::text')[26+(i*17)].get(),
                 'F9': response.css('td::text')[27+(i*17)].get(),
             }
+
+
+today = date.today()
+date = today.strftime("%m.%d.%y")
+
+process = CrawlerProcess(settings={
+    'FEED_FORMAT': 'json',
+    'FEED_URI': f'VIX_{date}.json'})
+
+
+process.crawl(VixSpider)
+process.start()
