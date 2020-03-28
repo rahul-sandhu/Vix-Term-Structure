@@ -1,13 +1,13 @@
 # Vix Term Structure Project
 
-# Caluluates the VIX Term Structure from underlying front-month futures on the VIX Index.
+Caluluates the VIX Term Structure from underlying front-month futures on the VIX Index.
 
-# Other data includes
+Other data includes
 
-## SPY Spot
+SPY Spot
 
-## VIX Index Spot
+VIX Index Spot
 
-## VIX 1-9 Month Futures
+VIX 1-9 Month Futures
 
-## 1-9 Month Contango
+1-9 Month Contango
