@@ -7,7 +7,7 @@ class VixSpider(scrapy.Spider):
     name = "vix_data"
 
     start_urls = [
-        "http://vixcentral.com/historical/?days=21"
+        "http://vixcentral.com/historical/?days=15"
     ]
 
     def parse(self, response):
