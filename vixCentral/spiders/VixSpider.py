@@ -4,7 +4,7 @@ from datetime import date
 
 
 class VixSpider(scrapy.Spider):
-    name = "vix_data"
+    name = "VixSpider"
 
     start_urls = [
         "http://vixcentral.com/historical/?days=21"
