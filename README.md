@@ -2,7 +2,7 @@
 
 Caluluates the VIX Term Structure from underlying front-month futures on the VIX Index.
 
-Values includes:
+Values include:
 
 - SPY Spot
 - VIX Index Spot
