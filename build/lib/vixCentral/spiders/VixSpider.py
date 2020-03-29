@@ -31,9 +31,9 @@ class VixSpider(scrapy.Spider):
 # today = date.today()
 # date = today.strftime("%m.%d.%y")
 
-process = CrawlerProcess(settings={
-    'FEED_FORMAT': 'json',
-    'FEED_URI': 'VIX.json'})
+# process = CrawlerProcess(settings={
+#     'FEED_FORMAT': 'json',
+#     'FEED_URI': 'VIX.json'})
 
 
 # process.crawl(VixSpider)
